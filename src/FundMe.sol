@@ -73,9 +73,10 @@ contract FundMe {
     }
 
     function withdraw() public onlyOwner {
+        uint256 fundersLength = s_funders.length;
         for (
             uint256 fundersIndex = 0;
-            fundersIndex < s_funders.length;
+            fundersIndex < fundersLength;
             fundersIndex++
         ) {
             address funder = s_funders[fundersIndex];

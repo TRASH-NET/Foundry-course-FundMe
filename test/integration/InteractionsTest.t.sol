@@ -7,9 +7,8 @@ import {FundFundMe, WithdrawFundMe} from "../../script/Interaction.s.sol";
 import {FundMe} from "../../src/FundMe.sol";
 import {HelperConfig} from "../../script/HelperConfig.s.sol";
 import {Test, console} from "forge-std/Test.sol";
-import {StdCheats} from "forge-std/StdCheats.sol";
 
-contract InteractionsTest is StdCheats, Test {
+contract InteractionsTest is Test {
     FundMe public fundMe;
     HelperConfig public helperConfig;
 
